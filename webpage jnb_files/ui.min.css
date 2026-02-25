@@ -1,0 +1,173 @@
+#sub__visual {
+  height: 100dvh;
+  position: relative;
+  background: #f4f4f6;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#sub__visual.--board {
+  margin-bottom: 150px;
+}
+#sub__visual::before, #sub__visual::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#sub__visual .visual__hd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: 5% -50%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#sub__visual .visual__slogan {
+  font-family: var(--Marcellus);
+  line-height: 1;
+}
+#sub__visual .visual__slogan strong,
+#sub__visual .visual__slogan em {
+  display: inline-block;
+}
+#sub__visual .visual__slogan strong {
+  font-size: 150px;
+  font-weight: normal;
+  color: #2a2928;
+  letter-spacing: -0.02em;
+}
+#sub__visual .visual__slogan strong:last-child {
+  display: block;
+}
+#sub__visual .visual__slogan em {
+  font-size: 60px;
+  font-style: normal;
+  color: #bfbfbf;
+  display: inline-block;
+  padding-left: 0.2em;
+}
+#sub__visual .visual__title {
+  font-size: 18px;
+  color: #5e5e5e;
+  padding-left: 0.5em;
+}
+#sub__visual .visual__title h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 1.5em 0 0.75em;
+}
+#sub__visual::after {
+  background-image: linear-gradient(360deg, rgb(24, 52, 52) 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.15;
+  z-index: 0;
+}
+
+#sub__visual.cate__JNB-CLINIC::before {
+  background-image: url(../hero-transparent-final.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: auto 78%;
+  width: 46%;
+  z-index: 0;
+}
+
+#sub__visual.cate__JNB-Signature::before {
+  background: url(/img/sub/visual/JNB-Signature.png) center bottom/contain no-repeat;
+}
+
+#sub__visual.cate__Rhinoplasty::before {
+  background: url(/img/sub/visual/Rhinoplasty.webp) center bottom/contain no-repeat;
+}
+
+#sub__visual.cate__Functional-Rhinoplasty::before {
+  background: url(/img/sub/visual/Functional-Rhinoplasty.png) center bottom/contain no-repeat;
+}
+
+#sub__visual.cate__Anti-Aging-Lifting::before {
+  background: url(/img/sub/visual/Anti-Aging-Lifting.png) center bottom/contain no-repeat;
+}
+
+#sub__visual.cate__Anti-Aging::before {
+  background: url(/img/sub/visual/Anti-Aging-Lifting.png) center bottom/contain no-repeat;
+}
+
+#sub__visual.cate__Lifting::before {
+  background: url(/img/sub/visual/Lifting.png) center bottom/contain no-repeat;
+}
+
+#sub__visual.cate__Petit::before {
+  background: url(/img/sub/visual/Petit.png) center bottom/contain no-repeat;
+}
+
+#sub__visual.cate__Stem-Cell::before {
+  background: url(/img/sub/visual/Stem-Cell.png) center bottom/contain no-repeat;
+}
+
+#sub__visual.cate__board,
+#sub__visual.cate__community {
+  margin-bottom: 50px;
+}
+
+#sub__visual.cate__board::before,
+#sub__visual.cate__community::before {
+  background: url(/img/sub/visual/Community.png) center bottom/contain no-repeat;
+}
+
+/* =========================
+   Sub Tab
+========================= */
+.model #sub__lnb,
+.bbs #sub__lnb {
+  display: none;
+}
+
+.cate__bo_table + #sub__lnb {
+  background: none;
+}
+
+#sub__lnb {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+#sub__lnb nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 40px;
+}
+#sub__lnb a {
+  position: relative;
+  padding: 18px 0 20px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2a2928;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-family: "SUIT Variable";
+}
+#sub__lnb a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  width: 100%;
+  height: 2px;
+  background: var(--theme-color);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+#sub__lnb a:hover {
+  color: var(--theme-color);
+}
+#sub__lnb a.--active {
+  color: var(--theme-color);
+  font-weight: 600;
+}
+#sub__lnb a.--active::after {
+  transform: scaleX(1);
+}/*# sourceMappingURL=ui.min.css.map */
